@@ -30,6 +30,10 @@ img {
     max-width: 100%;
 }
 
+.header {
+    display: flex;
+}
+
 .header-inner {
     max-width: 1200px;
     height: 110px;
@@ -49,6 +53,10 @@ img {
 .header-logo {
     display: block;
     width: 170px;
+}
+
+.site-menu {
+    text-align: center;
 }
 
 .site-menu ul {
@@ -102,5 +110,66 @@ img {
 /* RPD スマホ・タブレット対応 */
 /* ブレイクポイント 800px */
 @media (max-width: 800px) {
-    
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        width: 100%;
+        position: relative; /* ハンバーガーメニューの基準 */
+    }
+
+    .header-logo {
+        width: 100px;
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background: #736E62;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    /*is-showクラスが追加されたときの処理*/
+    .header-site-menu.is-show {
+        display: block;
+    }
+
+    .toggle-menu-button {
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/icon-menu.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
 }
