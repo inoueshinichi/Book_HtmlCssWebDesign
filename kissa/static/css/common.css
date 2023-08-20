@@ -172,4 +172,22 @@ img {
         border-radius: 0;
         outline: none;
     }
+    
+    .main {
+        padding-top: 50px; /* headerの高さだけ余白を作る */
+    }
+
+    .footer-logo {
+        margin-top: 60px;
+    }
+
+    .footer-tel {
+        font-size: 20px;
+    }
+
+    .copyright {
+        margin-top: 50px;
+    }
+
+    
 }
