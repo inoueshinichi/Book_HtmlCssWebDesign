@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* フルスクリーンレイアウト */
+
 .first-view {
     height: calc(100vh - 110px); /* Viewport Height */
     background-image: url(../images/index/bg-main.jpg);
@@ -51,7 +53,72 @@
     background-color: #d8b500;
 }
 
+/* フレックスレイアウト */
+
+.recommended {
+    background-color: #f8f8f8;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.recommended h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recommended h2::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-list {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    overflow: scroll;
+}
+
+.item-list li {
+    flex-shrink: 0;
+    width: 260px;
+    margin-left: 75px;
+}
+
+.item-list li:first-child {
+    margin-left: 0;
+}
+
+.item-list dl {
+    margin-top: 20px;
+}
+
+.item-list dt {
+    font-weight: bold;
+}
+
+.item-list dd {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.item-list .price {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 @media (max-width: 800px) {
+
+    /* フルスクリーンレイアウト */
     .first-view {
         height: calc(100vh - 50px);
         background-image: url(../images/index/bg-main-sp.jpg);
@@ -77,6 +144,17 @@
 
     .lead p {
         text-align: left;
+    }
+
+    /* フレックスボックスレイアウト */
+    .item-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .item-list li {
+        width: 20px;
+        margin-left: 30px;
     }
 }
 
