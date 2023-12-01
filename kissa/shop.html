@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <!-- 文字セット -->
+    <meta charset="UTF-8">
+
+    <!-- レイアウト -->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <!-- Webページの説明 -->
+    <title>ONLINE SHOP | Kissa official website</title>
+    <meta name="description" content="カフェ「KISSA」のスタッフが厳選した、園芸用のオンラインショップのページです。">
+    <meta name="keywords" content="Top,Concept,Menu,Shop,Access">
+
+    <!-- OGP設定 -->
+    <meta property="og:local" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="サンプルサイトKissa" />
+    <meta property="og:description" content="HTML&CSSの学習用サンプルページ" />
+    <meta property="og:url" content="http://localhost:80/index.html" />
+    <meta property="og:site_name" content="サンプルサイトKissa" />
+    <meta property="og:image" content="http:/localhost:80/kissa/static/images/ogp/ogp_img.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.7.0.js"></script>-->
+
+    <!-- Vue.js CDN -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- React.js CDN -->
+    <!-- https://ja.legacy.reactjs.org/docs/cdn-links.html -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
+
+    <!-- Local JavaScript -->
+    <script src="./static/js/toggle-menu.js"></script>
+
+    <!-- PC Icon -->
+    <link rel="icon" type="image/png" href="/kissa/static/images/icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/kissa/static/images/icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/kissa/static/images/icon/favicon-96x96.png" sizes="96x96" />
+
+    <!-- Android & iPhone Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/kissa/static/images/icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/kissa/static/images/icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/kissa/static/images/icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/kissa/static/images/icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/kissa/static/images/icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/kissa/static/images/icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/kissa/static/images/icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/kissa/static/images/icon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/kissa/static/images/icon/apple-touch-icon-180x180.png" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/shopt.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="./index.html" class="header-logo">
+                <img src="./static/images/common/logo-header.png" alt="KISSA">
+            </a>
+            <button class="toggle-menu-button"></button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="./concept.html">CONCEPT</a></li>
+                        <li><a href="./menu.html">MENU</a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./access.html">ACCESS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="title">
+            <h1>ONLINE SHOP</h1>
+            <p>オンラインショップ</p>
+        </div>
+        <div class="shop-contents">
+            <div class="shop-item">
+                <div class="item-group">
+                    <h2>GARDENING GOODS</h2>
+                    <ul class="item-list">
+                        <li>
+                            <a href="./shop-detail.html">
+                                <img src="./static/images/shop/img-item01.jpg" alt="ハンドフォークの商品画像" />
+                                <dl>
+                                    <dt>ハンドフォーク</dt>
+                                    <dd>ガーデニングの必需品といえる、伝統的な形のハンドフォークです。</dd>
+                                </dl>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+            <aside class="shop-menu"></aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="./concept.html">CONCEPT</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./access.html">ACCESS</a></li>
+            </ul>
+        </nav>
+        <a href="./index.html" class="footer-logo">
+            <img src="./static/images/common/logo-footer.png" alt="KISSA">
+        </a>
+        <p class="footer-tel">TEL ***-****-****</p>
+        <p class="footer-time">OPEN ***-*** **:**-**:**</p>
+        <p class="copyright"><small>&copy;Shinichi Inoue</small></p>
+    </footer>
+
+    <!-- local JS -->
+    <!-- <script src="your/path/to/**.js"></script> -->
+</body>
+
+</html>
